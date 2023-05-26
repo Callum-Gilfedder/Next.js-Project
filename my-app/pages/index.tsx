@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from "next/link"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,7 +11,11 @@ type Props = {
 
 const Home: React.FC<Props> = () => {
   return (
-    <h1>Hello world!</h1>
+    <>
+
+      <Link href="/notes"><h1>Click for notes</h1></Link>
+      <Link href="/goals"><h1>Click for goals</h1></Link>
+    </>
   )
 }
 
