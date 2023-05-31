@@ -1,12 +1,26 @@
 
+import Button from "@/components/Button"
+import Link from "next/link"
 
 export default function NavigationBar() {
+    
+
+
     return (
-        <div className="navigation-bar">
+        <nav>
             <ul>
-                <li>Notes</li>
-                <li>Goals</li>
+                <li> 
+                    <Link href="/"> <Button text="NOTES"> 
+                    </Button> 
+                    </Link>
+                </li>
+                <li> 
+                    <Link href="/goals">
+                    <Button text="GOALS"> 
+                    </Button> 
+                    </Link>
+                </li>
             </ul>
-        </div>
+        </nav>
     )
 }
